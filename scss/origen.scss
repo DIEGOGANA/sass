@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Shadows Into Light', cursive
+}
+
+
+
+
+#body{
+    background-color: aquamarine;
+}
+.h1{
+    
+    background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+color: honeydew;
+font-size: 80px;
+text-align: center;
+padding: 20px;
+}
+.h2{
+    
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    font-size: 40px;
+    padding-left: 20px;
+    color: honeydew;
+    
+    }
+
+
+@import"archivo";
+
+//variables
+
+$rojo: white;
+
+div{
+    background: aquamarine;
+    border: $rojo solid 5px;
+    p{
+        color: $rojo;
+        span {
+            text-decoration: underline;
+        }
+        a{
+            color: $rojo;
+            &:hover {
+                background-color: $rojo;
+            }
+           
+        }
+    }
+}
+//anidamiento
+
+
+ul {
+    list-style: none;
+     li {
+        padding: 15px;
+        display: inline-block;
+        &:hover{
+            background-color: $rojo;
+            width: 100px;
+            border-radius: 5px;
+        }
+         a {
+            text-decoration: none;
+            font-size: 16px;
+            color: $rojo;
+    
+        }
+    }
+   
+
+}
